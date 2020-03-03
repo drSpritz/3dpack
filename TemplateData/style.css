@@ -1,5 +1,23 @@
-.webgl-content * {border: 0; margin: 0; padding: 0}
-.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content {
+    width: 960px;
+    height: 600px;
+    margin: auto;
+}
+@media only screen and (max-device-width: 960px) {
+    .webgl-content {
+         width: 640px;
+     }
+}
+@media only screen and (max-device-width: 640px) {
+    .webgl-content {
+         width: 100%;
+     }
+}
+@media only screen and (max-device-width: 320px) {
+    .webgl-content {
+         width: 100%;
+     }
+}
 
 .webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
 .webgl-content .logo {background: url('https://drspritz.github.io/3dpack/TemplateData/progressLogo.Light.png') no-repeat center / contain; width: 400px; height: 400px;}
